@@ -24,6 +24,10 @@ function render(){
     $('#question').text(atob(data[0]["question_value"]+suffix));
 
     $('#answer').text();
+    
+    if ($('#answer').atob(val.()+suffix) == (data[0]["answer_value"]))
+        $('#story').text(atob(data[0]["story_value"]+suffix));
+        $('#story').show();
 }
 
 $( document ).ready(function() {
