@@ -19,6 +19,8 @@ data = [
     }
 ];
 
+var questionIndex = data.length - 1;
+
 // this function decides which data item to show
 function render(){
     suffix = "==";
@@ -49,7 +51,6 @@ $(document).ready(function () {
         toggleFields();
     });
     
-    var questionIndex = data.length - 1;
     
     
 });
