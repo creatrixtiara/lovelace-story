@@ -31,7 +31,7 @@ function render(){
 
 // this function checks if an answer is correct
 function toggleFields(){
-    if (btoa($('#answer').val()+suffix)) == (data[questionIndex]["answer_value"]+suffix)) {
+    if (atob($('#answer').val()+suffix)) == (data[questionIndex]["answer_value"]+suffix)) {
         $('#story').text(atob(data[questionIndex]["story_value"]+suffix));
         $('#story').show();
     }
