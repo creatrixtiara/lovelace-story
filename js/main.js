@@ -1,3 +1,7 @@
+suffix = "==";
+
+var questionIndex = data.length - 1;
+
 data = [
     {
         "date": "2016-10-31",
@@ -21,7 +25,7 @@ data = [
 
 // this function decides which data item to show
 function render(){
-    suffix = "==";
+    
     $('#question').text(atob(data[questionIndex]["question_value"]+suffix));
 
     $('#answer').text();
@@ -29,12 +33,12 @@ function render(){
 
 // this function checks if an answer is correct
 function toggleFields(){
-    if ($('#answer').atob($('#answer').val()+suffix) == (data[questionIndex]["answer_value"]+suffix)) {
+    if (atob($('#answer').val()+suffix) == (data[questionIndex]["answer_value"]+suffix)) {
         $('#story').text(atob(data[questionIndex]["story_value"]+suffix));
         $('#story').show();
     }
     else {
-        $('#story').hide()
+        $('#story').hide();
     }
 }
 
@@ -49,5 +53,5 @@ $(document).ready(function () {
         toggleFields();
     });
     
-    var questionIndex = data.length - 1;
+    
 });
