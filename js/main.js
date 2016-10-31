@@ -45,4 +45,4 @@ function toggleFields(){
 
 $( document ).ready(function() {
     render();
-});
+};
