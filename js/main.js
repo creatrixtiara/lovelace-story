@@ -31,7 +31,9 @@ function render(){
 
 // this function checks if an answer is correct
 function toggleFields(){
-    if (atob($('#answer').val()+suffix)) == (data[questionIndex]["answer_value"]+suffix)) {
+    var userAnswer = $('#answer').val();
+    var comparisonAnswer = atob(data[questionIndex]["answer_value"]+suffix);
+    if (userAnswer == comparisonAnswer) {
         $('#story').text(atob(data[questionIndex]["story_value"]+suffix));
         $('#story').show();
     }
