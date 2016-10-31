@@ -96,7 +96,8 @@ textarea {
    ========================================================================== */
 
 body {
-    background: url("../img/lovelacebg.png") no-repeat center fixed cover #191919;
+    background: url("../img/lovelacebg.png") no-repeat center fixed #191919;
+    background-size: cover;
 }
 
 
