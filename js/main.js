@@ -24,7 +24,7 @@ $(document).ready(function () {
     //this will call our toggleFields function every time the selection value of our underAge field changes
     $('#answer').change(function () {
         toggleFields();
-    });
+    };
     
 function render(){
     suffix = "==";
