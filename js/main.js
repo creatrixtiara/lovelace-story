@@ -20,10 +20,10 @@ data = [
 ];
 
 var questionIndex = data.length - 1;
+var suffix = "==";
 
 // this function decides which data item to show
 function render(){
-    suffix = "==";
     $('#question').text(atob(data[questionIndex]["question_value"]+suffix));
 
     $('#answer').text();
