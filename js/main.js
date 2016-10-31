@@ -25,9 +25,12 @@ function render(){
 
     $('#answer').text();
     
-    if ($('#answer').atob(val.()+suffix) == (data[0]["answer_value"]+suffix)) {
+    if ($('#answer').atob(val()+suffix) == (data[0]["answer_value"]+suffix)) {
         $('#story').text(atob(data[0]["story_value"]+suffix));
         $('#story').show();
+    }
+    else {
+        $('#story').hide()
     }
 }
 
