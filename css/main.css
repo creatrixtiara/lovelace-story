@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html {
+body {
     background-image: url("../img/lovelacebg.png") no-repeat center fixed;
     background-size: cover;
     background-color: #191919;
