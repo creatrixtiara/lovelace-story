@@ -25,13 +25,11 @@ var suffix = "==";
 // this function decides which data item to show
 function render(){
     $('#question').text(atob(data[questionIndex]["question_value"]+suffix));
-
-    $('#answer').text();
 }
 
 // this function checks if an answer is correct
 function toggleFields(){
-    var userAnswer = $('#answer').val();
+    var userAnswer = $('#answer-input').val();
     var comparisonAnswer = atob(data[questionIndex]["answer_value"]+suffix);
     if (userAnswer == comparisonAnswer) {
         $('#story').text(atob(data[questionIndex]["story_value"]+suffix));
