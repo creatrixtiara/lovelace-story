@@ -1,7 +1,5 @@
 suffix = "==";
 
-var questionIndex = data.length - 1;
-
 data = [
     {
         "date": "2016-10-31",
@@ -52,6 +50,8 @@ $(document).ready(function () {
     $('#answer').change(function () {
         toggleFields();
     });
+    
+    var questionIndex = data.length - 1;
     
     
 });
