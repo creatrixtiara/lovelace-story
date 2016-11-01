@@ -28,6 +28,7 @@ function render(){
 
 // this function checks if an answer is correct
 function toggleFields(){
+    var wrongAnswer = "<h2>Not quite there...</h2>";
     var userAnswer = $('#answer-input').val();
     var comparisonAnswer = atob(data[questionIndex]["answer_value"]);
     if (userAnswer == comparisonAnswer) {
@@ -35,7 +36,7 @@ function toggleFields(){
         $('#story').show();
     }
     else {
-        $('#story').hide();
+        $('#story').html(wrongAnswer);
     }
 }
 
