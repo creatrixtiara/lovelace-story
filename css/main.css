@@ -103,15 +103,12 @@ body {
 
 #content {
     text-align: center;
-    position: relative;
     width: 600px;
     margin:0 auto;
 }
 
 .storyset {
-    display: inline-block; 
     text-align: left;
-    position: absolute;
     padding-top: 20px;
     padding-bottom: 20px;
 }
