@@ -35,13 +35,11 @@ function toggleFields(){
         $('#story').html(atob(data[questionIndex]["story_value"]));
         $('#story').show();
     }
-    else if (userAnswer != comparisonAnswer) {
+    else {
         $('#story').html(wrongAnswer);
         $('#story').show();
     }
-    else {
-        $('#story').hide();
-    }
+    
 }
 
 // this function sets up things so the page actually does things
