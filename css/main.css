@@ -135,14 +135,18 @@ h2 {
     font-family: 'Molengo', sans-serif;
 }
 
+#otherquestions {
+    z-index: 4;
+    font-family: 'Oleo Script', cursive;
+    font-size: x-large;
+}
 
-
-
-
-
-
-
-
+#footer {
+    z-index: 5;
+    font-family: 'Molengo', sans-serif;
+    font-size: x-small;
+    color: #fbfbf1;
+}
 
 /* ==========================================================================
    Helper classes
