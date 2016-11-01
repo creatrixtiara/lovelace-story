@@ -20,6 +20,7 @@ data = [
 ];
 
 var questionIndex = data.length - 1;
+$('#story').hide();
 
 // this function decides which data item to show
 function render(){
