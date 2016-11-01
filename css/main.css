@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #ffffff;
+    color: #FEFEFA;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -98,7 +98,7 @@ textarea {
 body {
     background: url("../img/lovelacebg.png") no-repeat center fixed #191919;
     background-size: cover;
-    color: #ffffff;
+    color: #FEFEFA;
 }
 
 h2 {
@@ -113,8 +113,8 @@ h2 {
 }
 
 .storyset {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #question {
