@@ -114,6 +114,8 @@ body {
 
 #question {
     z-index: 1;
+    font-family: 'Oleo Script', cursive;
+    font-size: large;
 }
 
 #answer {
