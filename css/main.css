@@ -101,8 +101,14 @@ body {
     color: #ffffff;
 }
 
+#content {
+    text-align: center;
+}
 
-
+.storyset {
+    display: inline-block; 
+    text-align: left;
+}
 
 
 
