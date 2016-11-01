@@ -36,9 +36,12 @@ function toggleFields(){
         $('#story').html(atob(data[questionIndex]["story_value"]));
         $('#story').show();
     }
-    else {
+    else if (userAnswer != comparisonAnswer) {
         $('#story').html(wrongAnswer);
         $('#story').show();
+    }
+    else {
+        $('#story').hide();
     }
 }
 
