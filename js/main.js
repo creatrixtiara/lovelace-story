@@ -20,6 +20,7 @@ data = [
 ];
 
 var questionIndex = data.length - 1;
+var wrongAnswer = "<h2>Not quite there...</h2>";
 $('#story').hide();
 
 // this function decides which data item to show
@@ -29,7 +30,6 @@ function render(){
 
 // this function checks if an answer is correct
 function toggleFields(){
-    var wrongAnswer = "<h2>Not quite there...</h2>";
     var userAnswer = $('#answer-input').val();
     var comparisonAnswer = atob(data[questionIndex]["answer_value"]);
     if (userAnswer == comparisonAnswer) {
