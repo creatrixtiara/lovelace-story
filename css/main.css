@@ -101,6 +101,11 @@ body {
     color: #ffffff;
 }
 
+h2 {
+    font-family: 'Oleo Script', cursive;
+    font-size: x-large;
+}
+
 #content {
     text-align: center;
     width: 600px;
@@ -120,6 +125,8 @@ body {
 
 #answer {
     z-index: 2;
+    font-family: 'Lato', sans-serif;
+    color: #191919;
 }
 
 #story {
