@@ -52,7 +52,7 @@ $(document).ready(function () {
 
     toggleFields(); //call this first so we start out with the correct visibility depending on the selected form values
     //this will call our toggleFields function every time the answer changes
-    $('#answer').change(function () {
+    $('#answer button').click(function () {
         toggleFields();
     });
     
