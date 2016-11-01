@@ -21,7 +21,6 @@ data = [
 
 var questionIndex = data.length - 1;
 var wrongAnswer = "<h2>Not quite there...</h2>";
-$('#story').hide();
 
 // this function decides which data item to show
 function render(){
@@ -56,6 +55,7 @@ $(document).ready(function () {
         toggleFields();
     });
     
+    $('#story').hide();
     
     
 });
