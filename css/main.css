@@ -103,11 +103,13 @@ body {
 
 #content {
     text-align: center;
+    position: relative;
 }
 
 .storyset {
     display: inline-block; 
     text-align: left;
+    position: absolute;
 }
 
 #question {
