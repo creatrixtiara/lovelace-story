@@ -20,7 +20,7 @@ data = [
 ];
 
 var questionIndex = data.length - 1;
-var wrongAnswer = "Not quite there...";
+var wrongAnswer = "<h2>Not quite there...</h2>";
 $('#story').hide();
 
 // this function decides which data item to show
@@ -37,7 +37,8 @@ function toggleFields(){
         $('#story').show();
     }
     else {
-        $('#story').text(wrongAnswer);
+        $('#story').html(wrongAnswer);
+        $('#story').show();
     }
 }
 
