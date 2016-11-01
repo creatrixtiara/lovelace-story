@@ -110,7 +110,17 @@ body {
     text-align: left;
 }
 
+#question {
+    z-index: 1;
+}
 
+#answer {
+    z-index: 2;
+}
+
+#story {
+    z-index: 3;
+}
 
 
 
