@@ -24,10 +24,10 @@ var wrongAnswer = "<h2>Not quite there...</h2>";
 
 // this function decides which data item to show
 function render(){
-    if data[questionIndex]["question_type"] == "text" {
+    if (data[questionIndex]["question_type"] == "text") {
         $('#question').text(atob(data[questionIndex]["question_value"]));
     }
-    else if data[questionIndex]["question_type"] == "html" {
+    else if (data[questionIndex]["question_type"] == "html") {
         $('#question').html(atob(data[questionIndex]["question_value"]));
     }
 }
