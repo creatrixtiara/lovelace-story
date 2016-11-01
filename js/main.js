@@ -1,4 +1,4 @@
-data = [
+var data = [
     {
         "question_number": "0",
         "question_value": "V2hhdCBpcyAxICsxPw==",
