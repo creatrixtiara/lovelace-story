@@ -62,11 +62,11 @@ function getQuerystringParams(){
 	}
 }
 
-// this function creates a <li> for each of the data items
+// this function creates an entry for each of the data items
 function buildQuestionList(){
 	var html = '';
 	for(var i = 0; i < data.length;i++){
-		html += '<li><a href="/lovelace-story?q=' + (i + 1) + '">&#x2728; ' + (data[i]["question_number"]) + ' &#x2728;</a></li>';	
+		html += '&#x2728; <a href="/lovelace-story?q=' + (i) + '">' + (data[i]["question_number"]) + '</a> &#x2728; ';	
     }
 	return html;
 }
