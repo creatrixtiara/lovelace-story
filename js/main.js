@@ -34,7 +34,7 @@ function toggleFields(){
     var comparisonAnswer = atob(data[questionIndex]["answer_value"]);
     if (userAnswer == comparisonAnswer) {
         $('#story').html(atob(data[questionIndex]["story_value"]));
-        $('#story').show();
+        $('#story').fadeIn(100);
     }
     else {
         $('#story').html(wrongAnswer);
