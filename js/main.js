@@ -66,7 +66,7 @@ function getQuerystringParams(){
 function buildQuestionList(){
 	var html = '';
 	for(var i = 0; i < data.length;i++){
-		html += '<li><a href="/lovelace-story?q=' + (i + 1) + '</a></li>';
+		html += '<li><a href="/lovelace-story?q=' + (i + 1) + '">' + "&#x2728; " + (data[i][question_number]) + " &#x2728;" + </a></li>';
 	}
 	return html;
 }
@@ -82,6 +82,8 @@ $(document).ready(function () {
         e.preventDefault();
         toggleFields();
     });
+    
+    buildQuestionList();
     
     $('#story').hide();
     
