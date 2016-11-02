@@ -26,7 +26,6 @@ var wrongAnswer = "<h2>Not quite there...</h2>";
 function render(){
        // $('#questionNumber').text("&#x2728;" + (data[questionIndex]("question_number"]) + "&#x2728;");
         $('#question').html(atob(data[questionIndex]["question_value"]));
-        $('#otherquestions').html(buildQuestionList() + ' &#x2728;");
 }
 
 // this function checks if an answer is correct
