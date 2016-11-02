@@ -148,6 +148,16 @@ h2 {
     color: #fbfbf1;
 }
 
+a:link, a:visited {
+    color: #FEFEFA;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #FEFEFA;
+    font-weight: bold;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
