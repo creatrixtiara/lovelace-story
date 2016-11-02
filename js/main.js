@@ -43,6 +43,25 @@ function toggleFields(){
     
 }
 
+// e.g.
+// var q = getQuerystringParams();
+// var questionNumber = parseInt(q['q']);
+function getQuerystringParams(){
+	var querystring = window.location.search;
+	var questionmarkIndex = querystring.indexOf('?');
+	if(questionmarkIndex < 0){
+		return {};
+	} else {
+		var keyValueItems = querystring.substring(questionmarkIndex+1).split('&');
+		var items = {}, pair, d = decodeURIComponent, i;
+		for (i = 0; i < keyValueItems.length; i++) {
+			pair = keyValueItems[i].split('=');
+			items[d(pair[0])] = d(pair[1]);
+		}
+		return items;
+	}
+}
+
 // this function sets up things so the page actually does things
 $(document).ready(function () {
 
