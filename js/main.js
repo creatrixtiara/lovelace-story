@@ -62,6 +62,15 @@ function getQuerystringParams(){
 	}
 }
 
+// this function creates a <li> for each of the data items
+function buildQuestionList(){
+	var html = '';
+	for(var i = 0; i < data.length;i++){
+		html += '<li><a href="/lovelace-story?q=' + (i + 1) + '</a></li>';
+	}
+	return html;
+}
+
 // this function sets up things so the page actually does things
 $(document).ready(function () {
 
