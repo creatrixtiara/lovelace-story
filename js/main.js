@@ -77,7 +77,7 @@ $(document).ready(function () {
 
     var q = getQuerystringParams();
     if (q['q']) {
-        var questionIndex = parseInt(q['q']);
+        questionIndex = parseInt(q['q']);
     }
     
     render();
