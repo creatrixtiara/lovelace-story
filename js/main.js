@@ -18,6 +18,7 @@ var wrongAnswer = "<h2>Not quite there...</h2>";
 
 // this function decides which data item to show
 function render(){
+        $('#questionNumber').text("&#x2728;" + (data[questionIndex]("question_number"]) + "&#x2728;");
         $('#question').html(atob(data[questionIndex]["question_value"]));
 }
 
