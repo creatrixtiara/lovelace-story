@@ -75,6 +75,11 @@ function buildQuestionList(){
 // this function sets up things so the page actually does things
 $(document).ready(function () {
 
+    var q = getQuerystringParams();
+    if (q['q']) {
+        var questionIndex = parseInt(q['q']);
+    }
+    
     render();
 
     toggleFields(); //call this first so we start out with the correct visibility depending on the selected form values
