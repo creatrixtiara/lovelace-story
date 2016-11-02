@@ -50,7 +50,8 @@ $(document).ready(function () {
 
     toggleFields(); //call this first so we start out with the correct visibility depending on the selected form values
     //this will call our toggleFields function every time the answer changes
-    $('#answer button').click(function () {
+    $('#answer button').submit(function () {
+        e.preventDefault();
         toggleFields();
     });
     
