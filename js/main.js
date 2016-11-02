@@ -53,6 +53,7 @@ $(document).ready(function () {
     $('#answer button').submit(function (e) {
         e.preventDefault();
         toggleFields();
+        return false;
     });
     
     $('#story').hide();
