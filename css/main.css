@@ -101,9 +101,9 @@ body {
     color: #FEFEFA;
 }
 
-h2 {
+h2, #otherquestions {
     font-family: 'Oleo Script', cursive;
-    font-size: x-large;
+    font-size: large;
 }
 
 #content {
