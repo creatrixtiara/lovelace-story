@@ -67,7 +67,7 @@ function getQuerystringParams(){
 function buildQuestionList(){
 	var html = '';
 	for(var i = 0; i < data.length;i++){
-		html += '&#x2728; <a href="/lovelace-story?q=' + (i) + '">' + (data[i]["question_number"]) + '</a> ';	
+		html += '&#x2728; <a href="/lovelace-story/?q=' + (i) + '">' + (data[i]["question_number"]) + '</a> ';	
     }
 	return html;
 }
