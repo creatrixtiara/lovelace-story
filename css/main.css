@@ -126,7 +126,7 @@ h2 {
 #answer {
     z-index: 2;
     font-family: 'Molengo', sans-serif;
-    color: #191919;
+    color: #fbfbf1;
 }
 
 #story {
@@ -157,6 +157,14 @@ a:hover, a:active {
     color: #FEFEFA;
     font-weight: bold;
 }
+
+#answer-input[type=text], [type=submit] {
+    border: 2px dashed #727272;
+    border-radius: 5;
+    background-color: #191919;
+}
+
+
 
 /* ==========================================================================
    Helper classes
