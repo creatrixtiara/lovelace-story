@@ -156,6 +156,9 @@ a:link, a:visited {
 a:hover, a:active {
     color: #FEFEFA;
     font-weight: bold;
+    background-color: #727272;
+    -webkit-transition: background-color 3s; /* Safari */
+    transition: background-color 3s;
 }
 
 #answer-input[type=text], [type=submit] {
