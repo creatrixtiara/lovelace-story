@@ -31,7 +31,7 @@ function render(){
 
 // this function checks if an answer is correct
 function toggleFields(){
-    var userAnswer = $('#answer-input').val();
+    var userAnswer = $('#answer-input').val().toLowerCase;
     var comparisonAnswer = atob(data[questionIndex]["answer_value"]);
     if (userAnswer == comparisonAnswer) {
         $('#story').html(atob(data[questionIndex]["story_value"]));
